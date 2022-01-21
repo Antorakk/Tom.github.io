@@ -1,0 +1,656 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    /* background: #333333  url('../image/background.jpg') no-repeat ; 
+    background-size: cover; */
+    color: #333333;
+    line-height: 150%;
+    margin: 0;
+}
+
+.centre {
+    padding: 0 150px;
+}
+
+/* css du header */
+header  {
+    background-color: #333333;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 150%;
+
+    
+}
+
+.boite {
+    color: white;
+    position:absolute;
+    width: 200px;
+    right: 150px;
+    background-color: #888888;
+    padding: 10px; 
+    margin-top: 40px;
+    font-size: 66%;
+    top: 10px;
+    line-height: 125%;
+    
+    
+}
+/* css du menu */
+nav {
+    text-align: center;
+    padding: 0px 0px;
+    background: #eeeeee;
+    position: relative;
+}
+
+
+nav ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 10px;
+   
+}
+
+nav li a {
+    display: block;
+    color: orange;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 180px;
+    margin-top: 0px;
+    padding: 5px;
+    padding-top: 15px;
+}
+
+
+nav li a:hover {
+    color: white;
+    background-color: orange;
+}
+
+/* css du premier article */
+#premier_article {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-bottom: 5px solid orange;
+}
+
+#premier_article h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#premier_article img {
+    width: 300px;
+    float: right;
+    
+}
+
+/* css du deuxieme article */
+#deuxieme_article {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 5px solid orange;
+}
+
+#deuxieme_article img {
+    float: right;
+}
+
+
+section a {
+    color: orange;
+}
+
+/* css du premier formulaire  */
+.formulaire1 {
+    width: 260px;
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 20px ;
+    line-height: 30px;
+
+    
+}
+
+.formulaire1 #connecter {
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.formulaire1 input[type='submit'] {
+    margin-top: 10px;
+    width: 260px;
+    
+}
+.formulaire1 input {
+    width: 250px;
+    height: 25px;
+}
+
+.formulaire1 a {
+    color: rgb(0, 100, 139);
+}
+
+
+/* css du deuxieme formulaire */
+
+.formulaire2 {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+    line-height: 30px;
+}
+
+.formulaire2 #contacter {
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.formulaire2 label {
+    font-weight: bold;
+    display: block;
+}
+
+.formulaire2 input[type='text'], .formulaire2 input[type='email'], .formulaire2 input[type='submit']{
+    width: 220px;
+    
+}
+
+.formulaire2 textarea {
+    width: 500px;
+    display: block;
+}
+
+/* css du footer */
+
+footer {
+    background-color: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+
+}
+footer a{
+    text-align: left;
+    color: #888888;
+    font-size: 20px;
+}
+
+
+/* tablette  mode paysage */
+@media only screen and (max-device-width: 1024px) and (min-device-width: 765px) {
+    body {
+        background-color: rgb(134, 197, 192);
+    }
+    .titre {
+
+        font-style: italic;
+        text-shadow: 4px 2px 2px rgb(134, 197, 192);
+    
+    }
+    /* css du menu */
+    nav li a{
+        color: #333333;
+    }
+    nav li a:hover {
+        background-color: #333333;
+        color: rgb(134, 197, 192);
+    }
+    
+    /* premier article */
+    #premier_article {
+
+        border-bottom: 5px solid #333333;
+    }
+
+
+    #premier_article img {
+        border: 1px solid #333333;
+        box-shadow: -3px 5px 4px #333333;
+
+    }
+    #premier_article h1, h2{
+        font-style: italic;
+
+    }
+
+    /* deuxieme article */
+    #deuxieme_article {
+        border-bottom: 5px solid #333333;
+    }
+
+    #deuxieme_article h2, h3 {
+        font-style: italic;
+    }
+
+    #deuxieme_article img {
+        border: 1px solid #333333;
+        box-shadow: -3px 5px 4px #333333;
+    }
+
+    /* premier formulaire */
+    .formulaire1 {
+        background-color: #333333;
+        color: rgb(134, 197, 192);
+    }
+
+    .formulaire1 input[type = 'submit'] {
+        background-color: rgb(134, 197, 192);
+        border: 2px solid white;
+    }
+
+     /* deuxieme formulaire */
+     .formulaire2 {
+        background-color: #333333;
+        color: rgb(134, 197, 192);
+    }
+
+    .formulaire2 input[type = 'submit'] {
+        background-color: rgb(134, 197, 192);
+        border: 2px solid white;
+    }
+    .formulaire2 textarea {
+        width: 300px;
+    }
+
+
+}
+
+/* Iphone 6/7/8 plus  */
+/* Mobile horizontal (paysage)*/
+
+@media only screen and (max-device-width: 767px) and (max-device-height: 414px) {
+    body {
+        background-color: green;
+    }
+    .centre {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .titre {
+        text-align: left;
+    }
+
+    .formulaire2{
+        width: 400px;
+    }
+    .formulaire2 textarea {
+        width: 300px;
+    }
+
+    .boite {
+        display: none;
+    }
+}
+
+
+/* Mobile vertical portrait */
+
+@media only screen and (max-device-width: 414px) and (max-device-height: 767px) {
+    body {
+        background-color: magenta;
+    }
+    .centre {
+        padding: 0 80px;
+    }
+
+    .titre {
+        font-size: 37px;
+    }
+    
+    #premier_article img {
+        width: 100%;
+        float: none;
+
+    }
+
+    #deuxieme_article img {
+        width: 100%;
+        float: none;
+    }
+
+    .formulaire2 {
+        width: 250px;
+    }
+
+    .formulaire2 textarea {
+        width: 250px;
+    }
+
+    .boite {
+        display: none;
+    }
+
+
+}
+
+/* Iphone 10 et 12 pro */
+
+@media only screen and (max-device-width: 390px) and (max-device-height: 844px) {
+    body {
+        background-color: red;
+        font-family: 'Bebas Neue', cursive;
+    }
+    header {
+        background-color: black;
+    }
+
+    .centre {
+        padding: 0 20px;
+        
+    }
+    .boite {
+        display: none;
+    }
+    .titre {
+        font-size: 37px;
+        text-align: center;
+        background-color: red;
+        height: 50px;
+        padding-top: 30px;
+        width: 50%;
+        margin: auto;
+        /* text-shadow: 4px 2px 2px rgb(134, 197, 192); */
+    }
+
+    /*  menu de navigation */
+    nav {
+        text-align: left;
+        overflow: hidden;
+        background: black;
+        position: sticky;
+        
+       
+    }
+    .captain {
+        background: url('../image/captain.jpg');
+        color: red;
+    }
+
+    .ironman {
+        background: url('../image/ironman.jpg') ;
+        color: yellow;
+    }
+    .hulk {
+        background: url('../image/hulk.jpg');
+        color: blueviolet;
+    }
+
+    .thor {
+        background: url('../image/thor.jpg');
+        color: green;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul a {
+        margin-right: 205px ;
+        padding-right: 205px;
+        color: white;
+        font-size: 35px;
+        height: 40px;
+        
+    }
+    
+    nav li a:hover {
+       color: white;
+       text-shadow:
+                0 0 7px red,
+                0 0 10px #fff,
+                0 0 42px rgb(230, 18, 124),
+                0 0 77px rgb(230, 18, 124),
+                0 0 100px rgb(230, 18, 124);
+        animation: lumiere 1s infinite linear;
+
+    }
+    nav li a:before {
+        content: "→";
+        font-size: 40px;
+        text-shadow:
+                0 0 7px red,
+                0 0 10px #fff,
+                0 0 42px rgb(230, 18, 124),
+                0 0 77px rgb(230, 18, 124),
+                0 0 100px rgb(230, 18, 124);
+        animation: lumiere 1s infinite linear;
+        
+    }
+    @keyframes lumiere {
+        0%{
+            text-shadow:
+            0 0 7px red,
+            0 0 10px #fff,
+            0 0 42px rgb(230, 18, 124),
+            0 0 77px rgb(230, 18, 124),
+            0 0 100px rgb(230, 18, 124);
+        }
+        25%{
+            text-shadow:
+            0 0 7px blueviolet,
+            0 0 10px #fff,
+            0 0 42px rgb(230, 18, 124),
+            0 0 77px rgb(230, 18, 124),
+            0 0 100px rgb(230, 18, 124);
+        }
+       50%{
+            text-shadow:
+            0 0 7px yellow,
+            0 0 10px #fff,
+            0 0 32px rgb(230, 18, 124),
+            0 0 87px rgb(230, 18, 124),
+            0 0 120px rgb(230, 18, 124);
+        }
+        75%{
+            text-shadow:
+            0 0 7px green,
+            0 0 10px #fff,
+            0 0 32px rgb(230, 18, 124),
+            0 0 87px rgb(230, 18, 124),
+            0 0 120px rgb(230, 18, 124);
+        }
+
+        100%{
+            text-shadow:
+            0 0 7px blue,
+            0 0 10px #fff,
+            0 0 32px rgb(230, 18, 124),
+            0 0 87px rgb(230, 18, 124),
+            0 0 120px rgb(230, 18, 124);
+        }
+    }
+
+    nav::before {
+        content: "Menu";
+        padding: 30px 5px;
+        font-size: 40px;
+        text-transform:uppercase ;
+        color: white;
+        text-align: center;
+        display: block;
+        background: url('../image/thanos.jpg');
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    nav:hover .menu {
+        display: block;
+    }
+
+    
+
+
+    /* premier article */
+    #premier_article {
+        color: white;
+        text-align: center;
+        border-bottom: 5px solid #ffffff;
+        font-size: 20px;
+    }
+
+    #premier_article h1 {
+        font-size: 35px;
+    }
+
+    #premier_article h2 {
+        font-size: 30px;
+    }
+    #premier_article h1, h2{
+        font-style: italic;
+
+    }
+
+    #premier_article img {
+        width: 100%;
+        float: none;
+        display: block;
+        border: 5px solid #ffffff;
+        border-radius: 15px;
+        margin-right: 20px;
+    }
+    #premier_article img:hover{
+        border: 5px solid hsl(324, 70%, 45%);
+        animation: ChangeColor 10s infinite;
+
+    }
+    
+    
+
+    /* deuxieme article */
+    #deuxieme_article {
+        color: white;
+        text-align: center;
+        border-bottom: 5px solid #ffffff;
+        font-size: 20px;
+    }
+
+    #deuxieme_article h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    #deuxieme_article h2, h3 {
+        font-style: italic;
+    }
+
+    #deuxieme_article img {
+        width: 100%;
+        float: none;
+        display: block;
+        border: 5px solid #ffffff;
+        border-radius: 15px;
+        margin-right: 20px;
+    }
+    
+    #deuxieme_article img:hover{
+        border: 5px solid hsl(324, 70%, 45%);
+        animation: ChangeColor 10s infinite;
+
+    }
+
+    /* css de la promesse */
+    .promesse {
+        color: #ffffff;
+        font-size: 32px;
+        line-height: 30px;
+
+    }
+
+    /* premier formulaire */
+    .formulaire1 {
+        background-color: red;
+        color: #ffffff;
+        border: 5px solid white;
+        
+        
+    }
+    .formulaire1 #connecter {
+        font-size: 48px;
+    }
+
+    .formulaire1 p {
+        font-size: 20px;
+    }
+
+    .formulaire1 a {
+        color: black;
+    }
+
+    .formulaire1 input[type = 'submit'] {
+        background-color: black;
+        color: #ffffff;
+        border: 2px solid white;
+        font-size: 16px;
+    }
+
+    .formulaire1 input[type = 'submit']:hover {
+        background-color: hsl(0, 0%, 0%);
+        animation: ChangeColorBg 6s infinite;
+
+    }
+
+    /* deuxieme formulaire  */
+    .formulaire2 {
+        display: none;
+        
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+        
+    }
+    
+}
+
+@media only screen and (max-device-width: 844px) and (max-device-height: 390px) {
+    .boite {
+        display: none;
+    }
+}
+
+
+/* transition pour les box-shadow */
+@keyframes ChangeColor {
+    from, to { border: 5px solid hsl(0, 0%, 100%); }
+    10%      { border: 5px solid hsl(360, 65%, 45%); }
+    20%      { border: 5px solid hsl( 36, 80%, 45%); }
+    30%      { border: 5px solid hsl( 72, 75%, 35%); }
+    40%      { border: 5px solid hsl(108, 65%, 35%); }
+    50%      { border: 5px solid hsl(144, 75%, 35%); }
+    60%      { border: 5px solid hsl(180, 75%, 35%); }
+    70%      { border: 5px solid hsl(216, 60%, 45%); }
+    80%      { border: 5px solid hsl(252, 65%, 50%); }
+    90%      { border: 5px solid hsl(288, 60%, 40%); }
+}
+
+
+@keyframes ChangeColorBg {
+    from, to { background: hsl(0, 0%, 0%); }
+    10%      { background: hsl(360, 65%, 45%); }
+    20%      { background: hsl( 36, 80%, 45%); }
+    30%      { background: hsl( 72, 75%, 35%); }
+    40%      { background: hsl(108, 65%, 35%); }
+    50%      { background: hsl(144, 75%, 35%); }
+    60%      { background: hsl(180, 75%, 35%); }
+    70%      { background: hsl(216, 60%, 45%); }
+    80%      { background: hsl(252, 65%, 50%); }
+    90%      { background: hsl(288, 60%, 40%); }
+}
